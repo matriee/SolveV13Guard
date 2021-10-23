@@ -31,3 +31,8 @@ exports.execute = async (member) => {
       if(kanal) return kanal.send(new MessageEmbed().setTitle("Bir Kanal Silindi!").setDescription(`${entry.executor}, bir kanal silmeye çalıştı fakat ben izin vermedim! Kanalı silmeye çalışna kişi banlandı.`))
 
 }
+
+
+exports.conf = {
+  event: "channelDelete"
+};
