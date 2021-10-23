@@ -27,6 +27,9 @@ exports.execute = async (oldGuild, newGuild) => {
     let kanal = client.channels.cache.get(Settings.LogKanal);
     if(kanal) return kanal.send(new MessageEmbed().setTitle("Sunucu Güncellendi!").setDescription(`${entry.executor}, sunucuyu güncellemeye çalıştı fakat ben durdurdum ve eski haline getirdim. Güncelleyen kişi banlandı.`))
 
-
-
 }
+
+
+exports.conf = {
+  event: "guildUpdate"
+};
