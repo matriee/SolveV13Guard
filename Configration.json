@@ -1,0 +1,18 @@
+{
+    "Author": "",
+    "GuildId": "",
+    "whitelist": [],
+
+    "Staff":{
+        "AdminStaff": "",
+        "LogKanal": ""
+    },
+
+    "Guards":{
+        "KickGuard": true,
+        "BanGuard": true,
+        "BotGuard": true,
+        "ServerGuard": true,
+        "ChannelGuard": true
+    }
+}
