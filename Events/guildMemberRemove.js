@@ -24,3 +24,8 @@ exports.execute = async (member) => {
     kuralsiz(member, "JAİL");
     if(kanal) return kanal.send( new MessageEmbed().setTitle("Sağ Tık Kick Atıldı!").setDescription(`${member} - ${member.id},  ${entry.executor} **(${entry.executor.id})** tarafından sunucudan sağ tık ile kicklendi! Kickleyen kişi jaile atıldı.`).setFooter("Vectra Koruma"))
 }
+
+
+exports.conf = {
+  event: "guildMemberRemove"
+};
