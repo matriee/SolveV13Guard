@@ -26,3 +26,8 @@ exports.execute = async (member) => {
     let kanal = client.channels.cache.get(Settings.LogKanal);
     if(kanal) return kanal.send(new MessageEmbed().setTitle("Kanal Eklendi!").setDescription(`${entry.executor}, taafından bir kanal oluşturuldu! Kanalı oluşturan kişi Jail'e atıldı.`))
 }
+
+
+exports.conf = {
+  event: "channelCreate"
+};
