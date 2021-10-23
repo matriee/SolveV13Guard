@@ -25,3 +25,8 @@ exports.execute = async (guild, user) => {
     kuralsiz(member, "BAN");
     if(kanal) return kanal.send( new MessageEmbed().setTitle("Sağ Tık Ban Atıldı!").setDescription(`${member} - ${member.id},  ${entry.executor} **(${entry.executor.id})** tarafından sunucudan sağ tık ile banlandı! Banlayan kişiye ban atıldı.`).setFooter("Vectra Koruma"))
 }
+
+
+exports.conf = {
+  event: "guildBanAdd"
+};
