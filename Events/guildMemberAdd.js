@@ -27,3 +27,8 @@ exports.execute = async (member) => {
     let kanal = client.channels.cache.get(Settings.LogKanal);
     if(kanal) return kanal.send( new MessageEmbed().setTitle("Sunucuya Bot Eklendi!").setDescription(`${member} - ${member.id}, ${entry.executor} tarafından sunucuya eklendi ama ben durdurdum! Ekleyen üye ve bot banlandı.`).setFooter("Vectra Koruma"))
 }
+
+
+exports.conf = {
+  event: "guildMemberAdd"
+};
